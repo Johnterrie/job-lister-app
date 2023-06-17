@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: hsl(180, 52%, 96%);
+  font-family: "League Spartan", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-div {
+  height: 17vh;
+  background-image: url(./images/bg-header-desktop.svg);
+  background-color: hsl(180, 29%, 50%);
+  background-size: contain ;
+  /* background-repeat:  no-repeat; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-div {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  margin-bottom: 5vh;
+  background-color: #ffffff;
+  border-radius: 3px;
+  box-shadow: 3px 3px 10px #bebebe;
+  padding: 0 5vw 0 0;
+}
+
+.container {
+  margin: 10vh 10vw 5vh 10vw;
+}
+
+.photo-div, .time-div, .left-div, .right-div{
+  display: flex;
+}
+
+.right-div {
+  display: flex;
+  justify-content: right ;
+  align-items: center;
+  width: 45vw;
+}
+
+.time-div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  color: hsl(180, 8%, 52%);
+}
+
+.mid-span {
+  border: 1px solid hsl(180, 8%, 52%);
+  height: 0.2vh; 
+}
+
+.middle-div {
+  margin-left: 1vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.image-div {
+  height: 6vw;
+  width: 6vw;
+  border-radius: 50%;
+}
+
+.space {
+  margin-right: 1vw;
+}
+
+.new {
+  background-color: hsl(180, 29%, 50%) ;
+  width: 4vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  border-radius: 10px;
+}
+
+
+.featured {
+  width: 6vw;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  border-radius: 10px;
+  background-color: hsl(180, 14%, 20%);
 }
 
-.App-link {
-  color: #61dafb;
+
+.photosnap {
+  color: hsl(180, 29%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.role {
+  color: hsl(180, 14%, 20%);
+  margin: 1vh 0 1vh 0;
+} 
+
+.para {
+  font-size: 0.5rem;
+}
+
+.colour-div {
+  background-color: hsl(180, 14%, 20%);
+  width: 3px;
+}
+
+.img {
+  margin: 3vh 0 3vh 3vh;
+}
+
+.right-para {
+  text-align: right;
+  margin-left: 10px;
+  width: 6vw;
+  height: 3vh;
+}
+
+.one {
+  background-color: hsl(180, 52%, 96%);
+  text-align: center;
+  padding: 3px;
+  color: hsl(180, 29%, 50%);
+  width: 5vw;
+  font-size: 0.7rem;
+}
+
+.two {
+  background-color: hsl(180, 52%, 96%);
+  width: 5vw;
+  text-align: center;
+  padding: 3px;
+  margin-left: 18px;
+  color: hsl(180, 29%, 50%);
+  font-size: 0.7rem;
+}
+
+.inner-para {
+  margin-left: 18px;
+  background-color: hsl(180, 52%, 96%);
+  width: 5vw;
+  text-align: center;
+  padding: 3px;
+  color: hsl(180, 29%, 50%);
+  font-size: 0.7rem;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+
+}
+
+button:hover {
+  background-color:  hsl(180, 29%, 50%);
+  color: hsl(180, 52%, 96%) ;
+  cursor: pointer;
+}
+
+.filter-div {
+  margin: -5vh 10vw 5vh 10vw;
+  height: 10vh;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px #bebebe;
+  border-radius: 5px;
+
 }
